@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+    <button id="mybutton">Show button</button>
+    <div id="msg">
+        <h1>Hello world</h1>
+    </div>
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#mybutton").click(function () {
+                $("#msg").toggle(1000,function() {
+                    alert("work done")
+                    
+                });
+            });
+            $("#mybutton".hover(function() {
+                
+            }),function() {
+                
+            })
+        });
+    </script>
+</body>
+</html>
